@@ -1,0 +1,217 @@
+/* Базовые стили  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #f7f3ec;   /* тёплый фон */
+    color: #2b2b2b;
+    line-height: 1.6;
+    padding: 0 20px 40px;
+}
+
+/*  Шапка */
+.site-header {
+    text-align: center;
+    padding: 30px 0 20px;
+    border-bottom: 3px solid #8b5e3c;   /* коричневый акцент */
+}
+
+.site-header h1 {
+    font-size: 2.4em;
+    color: #6b3e26;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-style: italic;
+    color: #8a7a6d;
+    margin-top: 5px;
+}
+
+/* ===== Навигация ===== */
+.main-nav {
+    text-align: center;
+    margin: 20px 0 30px;
+}
+
+.main-nav a {
+    display: inline-block;
+    margin: 0 12px;
+    padding: 8px 18px;
+    text-decoration: none;
+    color: #6b3e26;
+    border: 1px solid #c9a27e;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    background-color: #8b5e3c;
+    color: #fff;
+}
+
+/* ===== Заголовки ===== */
+h2 {
+    color: #6b3e26;
+    margin: 25px 0 15px;
+    border-left: 5px solid #c9a27e;
+    padding-left: 12px;
+}
+
+h3 {
+    color: #8b5e3c;
+    margin-bottom: 8px;
+}
+
+/* ===== Главная ===== */
+.intro p {
+    margin-bottom: 12px;
+    font-size: 1.05em;
+}
+
+.accent {
+    color: #b04a2f;         /* акцентный красно-коричневый */
+    font-weight: bold;
+    font-style: italic;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 22px;
+    background-color: #b04a2f;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #8b3620;
+}
+
+/* Галерея на главной  */
+.images-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.images-row img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid #c9a27e;
+    border-radius: 6px;
+}
+
+/*  Карточки эпох  */
+.epoch-card {
+    background-color: #fffaf3;
+    border: 1px solid #e0d3c2;
+    border-radius: 6px;
+    padding: 15px 20px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/*  Таблица шедевров  */
+.masterpieces-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #fffaf3;
+}
+
+.masterpieces-table th,
+.masterpieces-table td {
+    border: 1px solid #c9a27e;
+    padding: 10px 14px;
+}
+
+.masterpieces-table thead th {
+    background-color: #8b5e3c;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Разное выравнивание в таблице */
+.col-left   { text-align: left; }
+.col-center { text-align: center; }
+.col-right  { text-align: right; }
+
+.masterpieces-table tbody tr:nth-child(even) {
+    background-color: #f3e9dd;
+}
+
+.table-note {
+    margin-top: 10px;
+    font-style: italic;
+    color: #8a7a6d;
+}
+
+.back-link {
+    margin-top: 20px;
+}
+
+.back-link a {
+    color: #b04a2f;
+    text-decoration: none;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}
+
+/*  Контакты  */
+.contacts-info {
+    background-color: #fffaf3;
+    border: 1px solid #e0d3c2;
+    border-radius: 6px;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+}
+
+.contacts-form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #6b3e26;
+}
+
+.contacts-form input,
+.contacts-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 8px 10px;
+    margin-top: 5px;
+    border: 1px solid #c9a27e;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1em;
+    background-color: #fffaf3;
+}
+
+.contacts-form button {
+    margin-top: 15px;
+}
+
+/* Подвал  */
+.site-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 15px;
+    border-top: 1px solid #c9a27e;
+    color: #8a7a6d;
+    font-size: 0.9em;
+}
