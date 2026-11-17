@@ -21,7 +21,7 @@ function even() {
 
 /**
  * Считает сумму чисел до заданного используя цикл
- * @param {*} n
+ * @param {number} n
  */
 function sumTo(n) {
     let sum = 0;
@@ -33,7 +33,7 @@ function sumTo(n) {
 
 /**
  * Считает сумму чисел до заданного используя рекурсию
- * @param {*} n
+ * @param {number} n
  */
 function recSumTo(n) {
     if (n === 0) return 0;
@@ -42,9 +42,10 @@ function recSumTo(n) {
 
 /**
  * Считает факториал заданного числа
- * @param {*} n
+ * @param {number} n
  */
 function factorial(n) {
+    if (n < 0) return NaN;
     if (n === 0 || n === 1) return 1;
     let result = 1;
     for (let i = 2; i <= n; i++) {
@@ -55,7 +56,7 @@ function factorial(n) {
 
 /**
  * Определяет, является ли число двойкой, возведенной в степень
- * @param {*} n
+ * @param {number} n
  */
 function isBinary(n) {
     // Степень двойки больше 0 имеет только один единичный бит.
@@ -64,7 +65,7 @@ function isBinary(n) {
 
 /**
  * Находит N-е число Фибоначчи
- * @param {*} n
+ * @param {number} n
  */
 function fibonacci(n) {
     // Учитывая тесты: F(1) = 1, F(2) = 1
