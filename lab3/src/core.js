@@ -3,8 +3,6 @@
  * @param {*} n
  */
 function isInteger(n) {
-    // Побитовое ИЛИ с нулём отбрасывает дробную часть.
-    // Если число не изменилось и это конечное число, то оно целое.
     return typeof n === 'number' && isFinite(n) && (n | 0) === n;
 }
 
@@ -13,7 +11,7 @@ function isInteger(n) {
  */
 function even() {
     const result = [];
-    for (let i = 2; i <= 20; i += 2) {
+    for (let i = 2; i <= 20; i++) {
         result.push(i);
     }
     return result;
@@ -68,7 +66,6 @@ function isBinary(n) {
  * @param {number} n
  */
 function fibonacci(n) {
-    // Учитывая тесты: F(1) = 1, F(2) = 1
     if (n <= 0) return 0;
     if (n === 1 || n === 2) return 1;
     
@@ -114,22 +111,22 @@ function sequence(start = 0, step = 1) {
  * Глубокое сравнение объектов
  */
 function deepEqual(firstObject, secondObject) {
-    // 1. Проверка на строгое равенство (включая ссылки на функции)
+    
     if (firstObject === secondObject) return true;
     
-    // 2. Обработка NaN (так как NaN !== NaN)
+    //  Обработка NaN (так как NaN !== NaN)
     if (typeof firstObject === 'number' && typeof secondObject === 'number' && 
         isNaN(firstObject) && isNaN(secondObject)) {
         return true;
     }
     
-    // 3. Если хотя бы один не объект (или null) - значит они не равны
+    //  Если хотя бы один не объект (или null) - значит они не равны
     if (firstObject === null || secondObject === null || 
         typeof firstObject !== 'object' || typeof secondObject !== 'object') {
         return false;
     }
     
-    // 4. Сравнение массивов
+    // Сравнение массивов
     const isFirstArray = Array.isArray(firstObject);
     const isSecondArray = Array.isArray(secondObject);
     
@@ -143,7 +140,7 @@ function deepEqual(firstObject, secondObject) {
         return true;
     }
     
-    // 5. Сравнение объектов
+    //  Сравнение объектов
     const keys1 = Object.keys(firstObject);
     const keys2 = Object.keys(secondObject);
     

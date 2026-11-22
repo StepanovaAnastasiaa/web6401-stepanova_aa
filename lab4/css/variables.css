@@ -1,0 +1,32 @@
+:root {
+    /* Фон */
+    --color-bg: #f7f3ec;
+    --color-surface: #fffaf3;
+    --color-surface-alt: #f3e9dd;
+
+    /* Текст */
+    --color-text: #2b2b2b;
+    --color-text-muted: #8a7a6d;
+    --color-text-light: #ffffff;
+
+    /* Акценты */
+    --color-primary: #6b3e26;
+    --color-primary-dark: #8b3620;
+    --color-secondary: #8b5e3c;
+    --color-accent: #b04a2f;
+    --color-border: #c9a27e;
+    --color-border-soft: #e0d3c2;
+
+    /* Тени */
+    --shadow-card: 0 2px 5px rgba(0, 0, 0, 0.05);
+    --shadow-card-hover: 0 8px 20px rgba(107, 62, 38, 0.15);
+
+    /* Отступы */
+    --gap-sm: 8px;
+    --gap-md: 16px;
+    --gap-lg: 24px;
+
+    /* Радиус */
+    --radius-sm: 4px;
+    --radius-md: 6px;
+}
