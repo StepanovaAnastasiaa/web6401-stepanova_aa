@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>История искусств — Анкета</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1 class="header__title">История искусств</h1>
+    <p class="header__subtitle">Анкета посетителя</p>
+</header>
+
+<nav class="nav">
+    <a href="index.html" class="nav__link">Главная</a>
+    <a href="grid.html" class="nav__link">Галерея</a>
+    <a href="form.html" class="nav__link nav__link--active">Анкета</a>
+</nav>
+
+<main>
+    <h2>Оставить заявку</h2>
+
+    <form class="form" id="user-form" novalidate>
+        <label class="form__label">
+            Логин
+            <input class="form__input" type="text" name="login" required
+                   placeholder="Введите логин">
+        </label>
+
+        <label class="form__label">
+            Пароль
+            <input class="form__input" type="password" name="password" required
+                   placeholder="Введите пароль">
+        </label>
+
+        <label class="form__label form__label--checkbox">
+            <input type="checkbox" name="consent" required>
+            Согласен на обработку персональных данных
+        </label>
+
+        <button class="form__btn" type="submit">Отправить на сервер</button>
+    </form>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 История искусств. Лабораторная работа №4.</p>
+</footer>
+
+<script src="js/form.js"></script>
+</body>
+</html>
